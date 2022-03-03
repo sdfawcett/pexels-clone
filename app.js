@@ -1,3 +1,6 @@
+//API key
+var key = config.SECRET_API_KEY;
+
 const divs = document.querySelectorAll("div");
 const body = document.body;
 const prev = document.querySelector(".prev");
