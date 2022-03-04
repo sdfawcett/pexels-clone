@@ -18,7 +18,6 @@ searchForm.addEventListener('submit', function(e) {
 
         var container = document.querySelector('.container');
 
-        for (var i = 0; i < imageArray.length; i++) {
             container.innerHTML = '';
             imageArray.forEach(function(photo) {
                 var photoDiv = document.createElement('div');
@@ -27,7 +26,7 @@ searchForm.addEventListener('submit', function(e) {
                 `;
                 container.appendChild(photoDiv);
             })
-        }
+        
         }
     };
     textValue = document.querySelector('#search-bar').value;
@@ -48,8 +47,6 @@ searchForm.addEventListener('submit', function(e) {
 
             var container = document.querySelector('.container');
 
-            for (var i = 0; i < imageArray.length; i++) {
-                container.innerHTML = '';
                 imageArray.forEach(function(photo) {
                     var photoDiv = document.createElement('div');
                     photoDiv.innerHTML = `
@@ -57,7 +54,7 @@ searchForm.addEventListener('submit', function(e) {
                     `;
                     container.appendChild(photoDiv);
                 })
-            }
+            
             }
         };
         textValue = document.querySelector('#search-bar').value;
